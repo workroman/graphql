@@ -28,7 +28,6 @@ const App = () => (
     {({ loading, error, data }) => {
       if (loading) return <div>Loading...</div>;
       if (error) return <div>Error :(</div>;
-      console.log(data.viewer);
       return (
         <div className = "wrap">
           <h2>resositories by {data.viewer.name}</h2>
