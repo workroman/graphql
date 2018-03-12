@@ -7,7 +7,8 @@ import { ApolloProvider } from 'react-apollo';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import PullRequest from "./components/PullRequest";
 
-const client = new ApolloClient({ uri: 'https://api.github.com/graphql?access_token=8aeff12d80f185a03ad09669be70f5d76d6e4ebe'});
+const token = '382d94722d8e5a3a81f2cc06222bbe5831bcb13f'
+const client = new ApolloClient({ uri: `https://api.github.com/graphql?access_token=${token}`});
 
 const ApolloApp = () => (
   <ApolloProvider client={client}>
